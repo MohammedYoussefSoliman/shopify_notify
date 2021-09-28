@@ -1,0 +1,175 @@
+@import url(https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow: hidden;
+}
+
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #232323;
+}
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  width: 100%;
+  font-family: "Barlow", sans-serif;
+  white-space: normal;
+}
+
+h1 {
+  color: #ffffff;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #cacaca;
+  border-radius: 3px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.modal--button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #161f1b;
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: 500;
+  width: 350px;
+  min-height: 62px;
+  outline: none;
+}
+
+.notify--button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #10c96c;
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: 500;
+  width: 100%;
+  border: none;
+  min-height: 62px;
+}
+
+.modal-overlay {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+  padding: 2rem;
+  width: 450px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+}
+.modal--title {
+  color: #232323;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.modal--tabs {
+  display: flex;
+  width: 100%;
+}
+.modal--tabs__button {
+  flex: 1;
+  min-height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.65rem 1rem;
+  color: #232323;
+  font-size: 1rem;
+  font-weight: 400;
+  background: #dfdfdf;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.modal--tabs__button.active {
+  color: #ffffff;
+  background: #232323;
+}
+.modal--tab {
+  width: 100%;
+}
+.modal--tab__input {
+  display: inline-block;
+  width: 100%;
+  border: 2px solid #c4c4c4;
+  border-radius: 8px;
+  padding: 1rem;
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #232323;
+}
+.modal--tab__input::placeholder {
+  font-size: 1.125rem;
+  font-weight: 300;
+  color: #d5d5d5;
+}
